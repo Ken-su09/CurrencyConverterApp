@@ -1,5 +1,6 @@
 package com.suonk.currencyconverterapp.viewmodels
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -17,6 +18,9 @@ class CurrencyConverterViewModel @Inject constructor(private val repository: Def
 
     fun getLatestRates(symbols: String) = viewModelScope.launch {
         val response = repository.getLatestRates(symbols)
+
+        Log.i("getLatestRates", "${response}")
+        Log.i("getLatestRates", "${response.body()}")
 
         if (response.isSuccessful) {
             currencyResponseLiveData.postValue(response.body())

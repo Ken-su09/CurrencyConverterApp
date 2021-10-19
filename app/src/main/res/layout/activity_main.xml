@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:backgroundTint="@color/white"
-        android:entries="@array/currency_codes"
+        android:entries="@array/currency_codes_euro"
         android:padding="15dp"
         app:layout_constraintBottom_toTopOf="@+id/view_center_in_parent"
         app:layout_constraintStart_toEndOf="@+id/converter_text_input" />
@@ -110,7 +110,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/converter_button"
         app:layout_constraintEnd_toStartOf="@+id/converter_button"
         app:layout_constraintStart_toStartOf="parent"

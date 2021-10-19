@@ -14,4 +14,12 @@
     <color name="almostTransparent">#22FFFFFF</color>
     <color name="backgroundColor">#20225a</color>
     <color name="backgroundColorPressed">#32333e</color>
+
+    <color name="centerColorDark">#20225a</color>
+    <color name="endColorDark">#075083</color>
+    <color name="startColorDark">#070928</color>
+
+    <color name="centerColorLight">#dbddce</color>
+    <color name="endColorLight">#f7e8d1</color>
+    <color name="startColorLight">#e5d6cc</color>
 </resources>
