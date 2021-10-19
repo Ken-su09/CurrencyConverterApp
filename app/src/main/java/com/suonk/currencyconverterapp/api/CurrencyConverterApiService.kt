@@ -1,5 +1,7 @@
 package com.suonk.currencyconverterapp.api
 
+import com.suonk.currencyconverterapp.models.data.CurrencyResponse
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -13,6 +15,8 @@ interface CurrencyConverterApiService {
     @GET("v1/latest")
     suspend fun getLatestRates(
         @Query("apiKey")
-        apiKey: String = API_KEY
-    )
+        apiKey: String,
+        @Query("symbols")
+        symbols: String,
+    ): Response<CurrencyResponse>
 }
